@@ -1,7 +1,7 @@
 const {Pool} = require("pg");
 async function criarConexao() {
     const pool = new Pool({
-        connectionString: 'postgres://zmsngxejchimun:b892b6119efbb131cd5d77e109bd592adad16f10c1f58534119715245d65777e@ec2-3-222-127-167.compute-1.amazonaws.com:5432/d6t5sg2eo4hreegi', 
+        connectionString: 'postgres://yprezhfexzmsst:bd058ca4df1b18b5fe6e81bbf84ff913abbbc150a9b6b6d2e7745a753b122c64@ec2-52-1-115-6.compute-1.amazonaws.com:5432/d9prot76bf3ps9 ', 
         ssl: {
             rejectUnauthorized: false
         }
