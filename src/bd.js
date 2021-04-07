@@ -1,7 +1,7 @@
-const {Pool} = require("pg");
+const {Pool} = require("pg")
 async function criarConexao() {
     const pool = new Pool({
-        connectionString: 'postgres://yprezhfexzmsst:bd058ca4df1b18b5fe6e81bbf84ff913abbbc150a9b6b6d2e7745a753b122c64@ec2-52-1-115-6.compute-1.amazonaws.com:5432/d9prot76bf3ps9 ', 
+        connectionString: 'postgres://yprezhfexzmsst:bd058ca4df1b18b5fe6e81bbf84ff913abbbc150a9b6b6d2e7745a753b122c64@ec2-52-1-115-6.compute-1.amazonaws.com:5432/d9prot76bf3ps9', 
         ssl: {
             rejectUnauthorized: false
         }
@@ -50,7 +50,8 @@ async function criarConexao() {
    
     
    
-    con.release();
+
+    let res = await con.query("create table Posicao (id serial primary key, nome varchar)")
 }
  
 criarConexao();
